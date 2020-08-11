@@ -53,6 +53,9 @@ export default Service.extend({
     members: feature('members'),
     nightShift: feature('nightShift', {user: true, onChange: '_setAdminTheme'}),
 
+    // Add support to RTl layout for Ghost Admin's
+    rtlSupport: feature('rtlSupport', {user: true, onChange: '_setAdminRtlLayout'}),
+
     _user: null,
 
     labs: computed('settings.labs', function () {
@@ -81,7 +84,8 @@ export default Service.extend({
             user: this.get('session.user')
         }).then(({user}) => {
             this.set('_user', user);
-            return this._setAdminTheme().then(() => true);
+            this._setAdminTheme().then(() => true);
+            return this._setAdminRtlLayout().then(() => true);
         });
     },
 
@@ -130,6 +134,21 @@ export default Service.extend({
             //TODO: Also disable toggle from settings and Labs hover
             $('link[title=dark]').prop('disabled', true);
             $('link[title=light]').prop('disabled', false);
+        });
+    },
+
+    _setAdminRtlLayout(enabled) {
+        let rtlSupport = enabled;
+
+        if (typeof rtlSupport === 'undefined') {
+            rtlSupport = enabled || this.rtlSupport;
+        }
+
+        return this.lazyLoader.loadStyle('rtl', 'assets/ghost-rtl.css', true).then(() => {
+            $('link[title=rtl]').prop('disabled', !rtlSupport);
+        }).catch(() => {
+            //TODO: Also disable toggle from settings and Labs hover
+            $('link[title=rtl]').prop('disabled', true);
         });
     }
 });

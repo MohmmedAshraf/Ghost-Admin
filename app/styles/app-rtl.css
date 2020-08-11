@@ -1,0 +1,286 @@
+/* --------------------------------------------------------- */
+/* Admin Rtl Styles
+/* --------------------------------------------------------- */
+body {
+  direction: rtl;
+  text-align: right;
+}
+.left-3 {
+    right: 1.2rem;
+}
+.gh-canvas-title svg {
+    transform: rotate(180deg);
+}
+
+/* Nav Menu
+/* ---------------------------------------------------------- */
+.gh-nav-menu-details {
+    padding-right: 0;
+    padding-left: 10px;
+}
+.gh-nav-menu-icon {
+    margin-right: 0;
+    margin-left: 10px;
+}
+
+.gh-nav-list .gh-secondary-action {
+    left: 8px;
+    right: unset;
+}
+.gh-nav-list .gh-secondary-action span svg {
+    margin-left: 0;
+    width: 22px;
+    height: 22px;
+}
+.gh-nav-list svg {
+    margin-left: 8px;
+    margin-right: 0;
+}
+.gh-nav-view-list a {
+    padding-left: 12px;
+    padding-right: 58px;
+}
+.gh-nav-button-expand svg {
+    transform: rotate(180deg);
+}
+
+
+/* DropDown Menu
+/* ---------------------------------------------------------- */
+.dropdown-menu svg {
+    margin-right: 0;
+    margin-left: 10px;
+}
+.gh-nav-menu-dropdown .dropdown-menu {
+    left: -30px;
+}
+
+
+/* Ghost Info Box
+/* ---------------------------------------------------------- */
+.gh-box {
+    border-left-width: 0;
+    border-right-width: 5px;
+    padding: 12px 40px 14px 10px;
+}
+.gh-box-info {
+    border-left-color: transparent;
+    border-right-color: #3eb0ef;
+}
+.gh-box svg:first-of-type {
+    left: unset;
+    right: 12px;
+}
+
+/* Ghost settings
+/* ---------------------------------------------------------- */
+.gh-setting-content {
+    margin: 0 0 0 50px;
+}
+
+.gh-input-file+.gh-btn {
+    margin-left: 0;
+    margin-right: 10px;
+}
+
+.gh-members-setting-content .gh-setting-desc,
+.gh-members-setting-content .gh-setting-title {
+    padding-left: 0;
+    padding-right: 2rem;
+}
+
+
+.gh-btn-group .gh-btn:first-of-type {
+    border-radius: 0 5px 5px 0;
+    border: none;
+}
+
+.gh-btn-group .gh-btn:last-of-type {
+    border-radius: 5px 0 0 5px;
+}
+
+/* Tags
+/* ---------------------------------------------------------- */
+.gh-tag-list-chevron svg {
+    transform: rotate(180deg);
+}
+.gh-tag-settings-multiprop .form-group {
+    margin-right: 0;
+    margin-left: .8rem;
+}
+.form-group.gh-tag-settings-colorcontainer {
+    margin-left: 0;
+}
+.flex.flex-column.items-start.mr5.w-100.w-50-m.w-two-thirds-l,
+.order-1.flex.flex-column.items-start.mr5.w-100.w-50-m.w-two-thirds-l {
+    margin-right: 0;
+    margin-left: 2rem;
+}
+
+/* Apps card meta
+/* ---------------------------------------------------------- */
+.apps-card-meta {
+    padding-right: 0;
+    padding-left: 70px;
+}
+.td-cta-arrow svg {
+    margin-left: 0;
+    margin-right: 20px;
+    transform: rotate(180deg);
+}
+.td-cta-content {
+    margin: 0 14px 0;
+}
+
+/* Blognav
+/* ---------------------------------------------------------- */
+.gh-blognav-add {
+    margin-left: -1px;
+    margin-right: 9px;
+}
+.gh-blognav-label {
+    margin-right: 0;
+    margin-left: 10px;
+}
+.gh-blognav-delete {
+    padding: 8px 10px 8px 0;
+}
+.gh-blognav-item .gh-blognav-url input {
+    direction: ltr;
+    text-align: left;
+}
+.gh-blognav-item:not(.gh-blognav-item--sortable) {
+    padding-left: 0;
+    padding-right: 16px;
+}
+
+/* Modal
+/* ---------------------------------------------------------- */
+.modal-header h1 {
+    margin: -5px 0 0 25px;
+}
+.modal-footer button {
+    margin-left: 0;
+    margin-right: 12px;
+}
+.modal-content .close {
+    left: 19px;
+    right: unset;
+}
+
+/* integrations cards
+/* ---------------------------------------------------------- */
+.nudge-bottom--1 {
+    margin-left: 0;
+    margin-right: .4rem;
+}
+.apps-card-app-icon {
+    margin: 0 0 0 12px;
+}
+.apps-configured svg {
+    margin-left: 0;
+    margin-right: 15px;
+    transform: rotate(180deg);
+}
+
+/* content filter
+/* ---------------------------------------------------------- */
+.ember-power-select-trigger svg {
+    margin-left: 0;
+    margin-right: 2px;
+}
+.gh-contentfilter-type .gh-contentfilter-menu-trigger {
+    border-top-left-radius: 0!important;
+    border-bottom-left-radius: 0!important;
+    border-top-right-radius: 4px!important;
+    border-bottom-right-radius: 4px!important;
+}
+
+.gh-contentfilter-menu:last-of-type .gh-contentfilter-menu-trigger {
+    border-top-left-radius: 4px!important;
+    border-bottom-left-radius: 4px!important;
+    border-top-right-radius: 0!important;
+    border-bottom-right-radius: 0!important;
+}
+
+/* Post Editor
+/* ---------------------------------------------------------- */
+.nudge-right--2 {
+    left: 2px;
+    right: 0;
+}
+.koenig-cardmenu {
+  left: auto;
+}
+.gh-editor-header {
+    direction: ltr;
+}
+.koenig-plus-menu-button {
+  margin: -2px -66px 0 0;
+}
+.gh-publishmenu-dropdown {
+  right: auto;
+}
+.ember-power-select-status-icon {
+  left: 13px;
+  right: unset;
+}
+.ember-power-select-multiple-option {
+    float: right;
+}
+.gh-notification-content {
+  text-align: left;
+}
+.settings-menu-header.subview .back svg {
+    transform: rotate(180deg);
+}
+.post-view-link {
+    left: 0;
+    right: unset;
+}
+.nav-list-item {
+    padding: 9px 12px 10px 40px;
+}
+.nav-list-item b {
+    text-align: right;
+}
+.nav-list-item svg {
+    right: 0;
+    left: 10px;
+    right: unset;
+    transform: rotate(180deg);
+}
+.for-checkbox .input-toggle-component {
+    float: right;
+    margin-right: 0;
+    margin-left: 7px;
+}
+.settings-menu-delete-button svg {
+    margin-right: 0;
+    margin-left: .5em;
+}
+.gh-date-time-picker-timezone {
+    margin-left: 0;
+    margin-right: -30px;
+}
+.settings-menu-pane .gh-date-time-picker-date {
+    margin-right: 0;
+    margin-left: 4px;
+}
+.gh-publishmenu-heading,
+.gh-publishmenu-radio-desc,
+.gh-publishmenu-radio-label {
+    text-align: right;
+}
+.gh-publishmenu-radio-content {
+    margin: 0 15px 0 0;
+}
+.gh-publishmenu-button {
+    float: left!important;
+    margin-left: 0!important;
+    margin-right: 8px!important;
+}
+.gh-date-time-picker-time {
+    margin-left: 0;
+    margin-right: 10px;
+}
